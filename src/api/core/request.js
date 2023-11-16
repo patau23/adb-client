@@ -7,6 +7,8 @@ const client = axios.create({
   json: true,
 });
 
+export const Api = process.env.VUE_APP_API_URL
+
 export default {
   async execute(method, resource, data = {}, headers = {}, params = {}) {
     return client({

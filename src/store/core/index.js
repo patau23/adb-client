@@ -1,5 +1,9 @@
 import { createStore } from "vuex";
-
+import Cart from "../modules/Cart";
+import Categories from "../modules/Categories";
+import Products from "../modules/Products";
+import User from "../modules/User";
+import Wishlist from "../modules/Wishlist";
 
 export default createStore({
   state() {
@@ -7,8 +11,12 @@ export default createStore({
   },
   getters: {},
   mutations: {},
-  actions:{},
+  actions: {},
   modules: {
-    
+    Cart,
+    Categories,
+    Products,
+    User,
+    Wishlist
   }
 })
